@@ -13,17 +13,24 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
           body: Center(
               child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-            Image.asset(
-              'assets/Images/IMG_3479.jpg',
-              height: 150,
-              width: 150,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset(
+                  'assets/Images/IMG_3479.jpg',
+                  height: 150,
+                  width: 150,
+                ),
+                Text("Type: Bird")
+              ],
             ),
-            Text('name:Bird'),
+            Text('name:Big Bird'),
             Text("age:22"),
             Text("Gender: Male")
           ]))),
